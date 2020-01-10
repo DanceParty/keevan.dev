@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Ibarra+Real+Nova|Raleway:400,600&display=swap");
+
+html {
+  background: var(--light);
+}
+
+body {
+  margin: 0;
+}
+
+p,
+a {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway", sans-serif;
+}

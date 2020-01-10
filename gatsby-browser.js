@@ -5,3 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+
+// global styles
+import "./src/styles/variables.css"
+import "./src/styles/global-provided.css"
+import "./src/styles/global.css"

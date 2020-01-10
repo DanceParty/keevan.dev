@@ -1,0 +1,46 @@
+.header {
+  background-color: var(--light);
+  border-top: 5px solid var(--secondary);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+}
+
+.title {
+  margin: 0;
+  flex: 3;
+}
+
+.link {
+  color: var(--dark);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+}
+
+.link:hover {
+  color: var(--dark);
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  flex: 2;
+}
+
+.menu > .menuItem {
+  margin: 0;
+}
+
+.menuItemLink {
+  text-decoration: none;
+  color: var(--dark);
+  padding: 0 0.65rem 0 0.65rem;
+}
