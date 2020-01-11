@@ -1,21 +1,50 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Card from "../components/card/card"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+const IndexPage = (props: any) => {
+  const posts = props.data.allMarkdownRemark.edges
+  return (
+    <Layout>
+      <SEO title="Home" />
+      {posts.map(({ node }: any) => {
+        return (
+          <Card
+            title={node.frontmatter.title}
+            subtitle={`written by Keevan on ${node.frontmatter.date}`}
+            url={node.frontmatter.slug}
+          >
+            {node.frontmatter.excerpt}
+          </Card>
+        )
+      })}
+    </Layout>
+  )
+}
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          frontmatter {
+            excerpt
+            date(formatString: "MMMM DD, YYYY")
+            title
+            slug
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

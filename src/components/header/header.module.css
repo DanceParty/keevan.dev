@@ -17,14 +17,16 @@
   flex: 3;
 }
 
-.link {
+/* .link {
   color: var(--dark);
   text-decoration: none;
+  border-bottom: none;
   font-family: "Raleway", sans-serif;
-}
+} */
 
 .link:hover {
   color: var(--dark);
+  border-bottom: none;
 }
 
 .menu {

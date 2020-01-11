@@ -1,0 +1,23 @@
+.h1 {
+  color: var(--dark);
+}
+
+.h4 {
+  color: var(--dark-light);
+}
+
+.marginBottomNone {
+  margin-bottom: 0;
+}
+
+.marginBottomSmall {
+  margin-bottom: 0.2rem;
+}
+
+.marginBottomMedium {
+  margin-bottom: 1.4rem;
+}
+
+.center {
+  text-align: center;
+}

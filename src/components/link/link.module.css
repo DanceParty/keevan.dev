@@ -1,0 +1,24 @@
+.link {
+  text-decoration: none;
+  color: var(--dark);
+  font-family: "Ibarra Real Nova", serif;
+}
+
+.link:hover {
+  color: var(--accent-dark);
+}
+
+.noHover:hover {
+  color: var(--dark) !important;
+}
+
+/* 
+  this is an issue when you have
+  <Link>
+    <Title />
+  </Link>
+*/
+
+.underline {
+  border-bottom: 3px solid var(--accent-dark);
+}

@@ -6,25 +6,28 @@
  */
 
 import React from "react"
+import classnames from "classnames"
 
 import Header from "../header/header"
 import styles from "./layout.module.css"
 
 interface LayoutProps {
   children?: React.ReactNode
+  center?: boolean
 }
 
-const Layout: React.FunctionComponent = ({ children }: LayoutProps) => {
+const Layout = ({ children, center }: LayoutProps) => {
+  const containerClassname = classnames(styles["container"], {
+    [styles["center"]]: center,
+  })
+  const mainClassname = classnames(styles["main"], {
+    [styles["center"]]: center,
+  })
   return (
     <>
       <Header />
-      <div className={styles["container"]}>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+      <div className={containerClassname}>
+        <main className={mainClassname}>{children}</main>
       </div>
     </>
   )

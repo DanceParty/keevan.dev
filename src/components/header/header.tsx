@@ -1,5 +1,7 @@
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import React from "react"
+import Title from "../title/title"
+import Link from "../link/link"
 import styles from "./header.module.css"
 
 const Header = () => {
@@ -22,32 +24,44 @@ const Header = () => {
       className={styles["header"]}
     >
       <div className={styles["wrapper"]}>
-        <h1 className={styles["title"]}>
-          <Link className={styles["link"]} to="/">
+        <Title className={styles["title"]}>
+          <Link to="/" underline={false} hover={false}>
             {showTitle
               ? data.site.siteMetadata.title
               : data.site.siteMetadata.titleSecondary}
           </Link>
-        </h1>
+        </Title>
         <ul className={styles["menu"]}>
           <li className={styles["menuItem"]}>
-            <Link className={styles["menuItemLink"]} to="/">
+            <Link className={styles["menuItemLink"]} to="/" underline={false}>
               blog
             </Link>
           </li>
           <li className={styles["menuItem"]}>
-            <Link className={styles["menuItemLink"]} to="/">
+            <Link
+              className={styles["menuItemLink"]}
+              to="/uses"
+              underline={false}
+            >
               uses
             </Link>
           </li>
           <li className={styles["menuItem"]}>
-            <Link className={styles["menuItemLink"]} to="/">
-              contact
+            <Link
+              className={styles["menuItemLink"]}
+              to="/about"
+              underline={false}
+            >
+              about
             </Link>
           </li>
           <li className={styles["menuItem"]}>
-            <Link className={styles["menuItemLink"]} to="/">
-              about
+            <Link
+              className={styles["menuItemLink"]}
+              to="/contact"
+              underline={false}
+            >
+              contact
             </Link>
           </li>
         </ul>

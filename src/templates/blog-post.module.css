@@ -1,0 +1,33 @@
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.content {
+  margin-top: 5rem;
+}
+
+.descriptionWrapper {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.description {
+  font-style: italic;
+  text-align: center;
+}
+
+.content > h1 {
+  margin-bottom: 2.5rem;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.content > h2 {
+  margin-bottom: 2rem;
+}
+
+.content > h4 {
+  margin-bottom: 0.45rem;
+}
