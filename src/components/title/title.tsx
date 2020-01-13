@@ -20,6 +20,7 @@ const Title = (props: TitleProps) => {
     [styles["marginBottomNone"]]: props.marginBottom === Spacing.NONE,
     [styles["marginBottomSmall"]]: props.marginBottom === Spacing.SMALL,
     [styles["marginBottomMedium"]]: props.marginBottom === Spacing.MEDIUM,
+    [styles["marginBottomLarge"]]: props.marginBottom === Spacing.LARGE,
 
     [styles["center"]]: props.center,
   })

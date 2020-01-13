@@ -6,6 +6,7 @@ import styles from "./link.module.css"
 
 interface LinkProps {
   children?: React.ReactNode
+  onClick?: () => void
   to: string
   underline?: boolean
   className?: string
@@ -18,7 +19,7 @@ const Link = (props: LinkProps) => {
     [styles["noHover"]]: props.hover === false,
   })
   return (
-    <GatsbyLink className={LinkClassname} to={props.to}>
+    <GatsbyLink onClick={props.onClick} className={LinkClassname} to={props.to}>
       {props.children}
     </GatsbyLink>
   )
