@@ -14,12 +14,21 @@ interface LinkProps {
 }
 
 const Link = (props: LinkProps) => {
-  const LinkClassname = classnames(styles["link"], props.className, {
+  const linkClassnames = classnames(styles["link"], props.className, {
     [styles["underline"]]: props.underline,
     [styles["noHover"]]: props.hover === false,
   })
-  return (
-    <GatsbyLink onClick={props.onClick} className={LinkClassname} to={props.to}>
+  const isExternal = props.to.includes("https://")
+  return isExternal ? (
+    <a className={linkClassnames} href={props.to}>
+      {props.children}
+    </a>
+  ) : (
+    <GatsbyLink
+      onClick={props.onClick}
+      className={linkClassnames}
+      to={props.to}
+    >
       {props.children}
     </GatsbyLink>
   )
