@@ -3,7 +3,7 @@ slug: "/2019-favorite-albums"
 date: 2020-01-20
 title: "My Favorite Albums of 2019"
 description: 'After watching many top album lists, I thought it would be fun to make my own so here is what I thought the best albums of 2019 were. For more of what music I am listening to, please check out my <a href="https://www.last.fm/user/keevandance">last.fm</a> profile.'
-excerpt: "The software, hardware, and more that I use on an everyday basis..."
+excerpt: "A short list of my most listened to and favorite albums of the year 2019..."
 ---
 
 ## 1. James Blake - Assume Form
