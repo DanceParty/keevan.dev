@@ -20,7 +20,7 @@ excerpt: "A short list of my most listened to and favorite albums of the year 20
 
 ## 7. Hannah Diamond - Reflections
 
-## 8. Little Sims - Grey Area
+## 8. 100 Gecs - 1000 Gecs
 
 ## 9. Slowthai - Nothing Great About Britain
 
