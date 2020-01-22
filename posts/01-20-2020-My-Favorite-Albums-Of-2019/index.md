@@ -1,5 +1,5 @@
 ---
-slug: "/2019-favorite-albums"
+slug: "/blog/2020/01/favorite-albums-of-2019"
 date: 2020-01-20
 title: "My Favorite Albums of 2019"
 description: 'After watching many top album lists, I thought it would be fun to make my own so here is what I thought the best albums of 2019 were. For more of what music I am listening to, please check out my <a href="https://www.last.fm/user/keevandance">last.fm</a> profile.'
