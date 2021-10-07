@@ -1,0 +1,25 @@
+#page-content {
+  padding: 30px 90px;
+  max-width: 750px;
+  float: left;
+}
+
+p {
+  line-height: 25px;
+}
+
+body {
+  background: #2a2a2a;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+a, a:visited {
+  color: #fff;
+  line-height: 22px;
+}
+
+h2 {
+  font-weight: 700;
+}

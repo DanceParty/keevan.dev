@@ -1,0 +1,27 @@
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+.flex-grow-2 {
+  flex-grow: 2;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.title {
+  padding-left: 25px;
+}
