@@ -4,12 +4,16 @@
   float: left;
 }
 
+#page-content > h1:first-of-type {
+  margin-top: 0;
+}
+
 p {
   line-height: 25px;
 }
 
 body {
-  background: #2a2a2a;
+  background: #161616;
   padding: 0;
   font-family: sans-serif;
   color: #fff;

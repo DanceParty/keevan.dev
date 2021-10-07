@@ -25,3 +25,8 @@
 .title {
   padding-left: 25px;
 }
+
+.title-wrapper {
+  border-bottom: 2px solid #2a2a2a;
+  margin-bottom: 18px;
+}
