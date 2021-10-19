@@ -1,7 +1,7 @@
 import Head from '../components/head'
 import Main from "../components/main"
 import { getAllPostsByCategory, getAllPostIds, getPostData } from "../lib/posts"
-
+import styles from "../styles/[id].module.css"
 
 export async function getStaticProps({ params }) {
   const allCategoriesWithPostsData = getAllPostsByCategory()
@@ -31,13 +31,12 @@ export default function Post({ allCategoriesWithPostsData, postData }) {
       </Head>
 
       <Main data={allCategoriesWithPostsData}>
-        {postData.title}
-        <br />
-        {postData.id}
-        <br />
-        {postData.date}
-        <br />
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <h1>{postData.title}</h1>
+        <em>last updated: {postData.updatedAt}</em>
+        { postData.bannerImage ? (
+          <img className={styles["banner-image"]} src={`images/${postData.bannerImage}`} alt={postData.bannerImage} />
+        ) : null }
+        <div className={styles["post-content"]} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </Main>
     </div>
   )
