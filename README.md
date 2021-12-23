@@ -12,6 +12,7 @@
 ---
 title: 'vancouver 2021'
 date: '2020-01-01'
+images: "image-name.jpg"
 ---
 ```
 
@@ -23,3 +24,5 @@ Next.js has two forms of pre-rendering: **Static Generation** and **Server-side 
 Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
 
 ### Adding images to posts
+
+Coming soon... Need to build out the parser, or figure it out.
