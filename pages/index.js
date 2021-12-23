@@ -21,7 +21,7 @@ export default function Home({ allCategoriesWithPostsData }) {
       </Head>
 
       <Main data={allCategoriesWithPostsData}>
-        <img src="images/stream.jpg" alt="stream" />
+        <img src="images/ganghwado.jpg" alt="stream" />
       </Main>
     </div>
   )

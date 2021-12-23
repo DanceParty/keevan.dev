@@ -1,4 +1,8 @@
-# On Learning Dota 2: Introduction
+---
+title: 'on learning dota 2: introduction'
+updatedAt: '2021-12-23'
+bannerImage: "subway.jpg"
+---
 
 ## Backstory
 There has been only a few times over the year where I would be invited to play some Dota 2 with friends. This usually means closing Starcraft II, exiting Battlenet, opening Steam, and updating Dota 2 for a couple minutes as I am usually many updates behind. What generally happens next is I hop into a game, with no idea where to play or whom to play and by the 5 minute mark I am so far behind that I have completely lost interest in the game. For the next 30 minutes or however long it takes for us to lose I am spending my time trying to regain interest, or quickly alt tabbing and checking social media or changing music.
